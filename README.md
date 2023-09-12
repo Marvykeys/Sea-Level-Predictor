@@ -1,30 +1,34 @@
 # Sea-Level-Predictor
 
-You will anaylize a dataset of the global average sea level change since 1880. You will use the data to predict the sea level change through year 2050.
+As one of the final tasks at the end of the FREECODECAMP Python For Data Analysis Course,
 
-Use the data to complete the following tasks:
+I was required to anaylize a dataset of the global average sea level change since 1880, using the data to predict the sea level change through year 2050.
 
-Use Pandas to import the data from epa-sea-level.csv.
+I used the data to complete the following tasks:
 
-Use matplotlib to create a scatter plot using the "Year" column as the x-axis and the "CSIRO Adjusted Sea Level" column as the y-axix.
+1) importing the data from epa-sea-level.csv using Pandas.
 
-Use the linregress function from scipy.stats to get the slope and y-intercept of the line of best fit. 
+2) Using matplotlib to create a scatter plot using the "Year" column as the x-axis and the "CSIRO Adjusted Sea Level" column as the y-axix.
 
-Plot the line of best fit over the top of the scatter plot. 
+3) Applying the linregress function from scipy.stats to get the slope and y-intercept of the line of best fit. 
 
-Make the line go through the year 2050 to predict the sea level rise in 2050.
+4) Plotting the line of best fit over the top of the scatter plot. 
 
-Plot a new line of best fit just using the data from year 2000 through the most recent year in the dataset. 
+5) Making the line go through the year 2050 to predict the sea level rise in 2050.
 
-Make the line also go through the year 2050 to predict the sea level rise in 2050 if the rate of rise continues as it has since the year 2000.
+6) Plotting a new line of best fit just using the data from year 2000 through the most recent year in the dataset. 
 
-The x label should be "Year", the y label should be "Sea Level (inches)", and the title should be "Rise in Sea Level".
+7) Making the line also go through the year 2050 to predict the sea level rise in 2050 if the rate of rise continues as it has since the year 2000.
+
+8) Making the x label "Year", the y label "Sea Level (inches)", and the title "Rise in Sea Level".
 
 ```Python
+# Import the library 
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
+# Define the function named draw_plot
 def draw_plot():
     # Read data from file
     df = pd.read_csv("epa-sea-level.csv")
