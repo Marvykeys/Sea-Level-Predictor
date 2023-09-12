@@ -6,7 +6,7 @@ I was required to anaylize a dataset of the global average sea level change sinc
 
 I used the data to complete the following tasks:
 
-1) importing the data from epa-sea-level.csv using Pandas.
+1) Importing the data from epa-sea-level.csv using Pandas.
 
 2) Using matplotlib to create a scatter plot using the "Year" column as the x-axis and the "CSIRO Adjusted Sea Level" column as the y-axix.
 
